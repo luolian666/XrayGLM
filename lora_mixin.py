@@ -249,7 +249,7 @@ if __name__ == '__main__':
     torch.save(model.state_dict(), "linear.pt")
     x = torch.randn(2, 100)
     out1 = model(x)
-    model.child = LoraLinear(100, 200, 10,10)
+    model.child = LoraLinear(100, 200, 10,10,8)
     model.load_state_dict(torch.load("linear.pt"), strict=False)
     out2 = model(x)
     torch.save(model.state_dict(), "lora.pt")
