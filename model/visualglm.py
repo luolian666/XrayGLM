@@ -7,7 +7,8 @@ from .blip2 import BLIP2
 
 from sat.resources.urls import MODEL_URLS
 #MODEL_URLS['visualglm-6b'] = 'https://cloud.tsinghua.edu.cn/f/348b98dffcc940b6a09d/?dl=1'
-MODEL_URLS['visualglm-6b'] = 'https://huggingface.co/THUDM/visualglm-6b'
+#MODEL_URLS['visualglm-6b'] = 'https://huggingface.co/THUDM/visualglm-6b'
+MODEL_URLS['visualglm-6b'] ='r2://visualglm-6b.zip'
 class ImageMixin(BaseMixin):
     def __init__(self, args):
         super().__init__()
